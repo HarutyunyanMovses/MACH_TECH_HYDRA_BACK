@@ -19,7 +19,7 @@ const adminRouter = require("./routers/adminRouter/adminRouter")
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin:'*', 
+  origin:'https://hydra-machtech.herokuapp.com', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200,
   maxHttpBufferSize: 1e8
