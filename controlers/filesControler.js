@@ -22,7 +22,7 @@ class FilesControler {
           info = data[data.length - 1]
         })
         await Promise.all(promises)
-        res.send(SECRET.SECRET.URL_LOCAL_SERVER + "/oragic/files/" + info._id + "/" + info.filename)
+        res.send(SECRET.SECRET.URL_LOCAL_SERVER + "/hydra/files/" + info._id + "/" + info.filename)
       }
     } catch (err) {
       nxt(err)
